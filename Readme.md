@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Руслан Рысбеков](https://up.htmlacademy.ru/htmlcss/36/user/815423).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Ефимов](https://htmlacademy.ru/profile/efiand).
 
 ---
 
