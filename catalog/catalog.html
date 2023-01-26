@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style/style.CSS">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="wrapper">
+    <header class="page-header">
+        <img src="#" alt="логотип сайта Седона" class="logo">
+        <nav class="header-navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item"><a class="navigation-link">Главная</a></li>
+            <li class="navigation-item"><a class="navigation-link">О Седоне</a></li>
+            <li class="navigation-item"><a class="navigation-link">Гостиницы</a></li>
+          </ul>
+
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item">
+              <a href="#" class="navigation-link-search">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link-heart">
+                <span class="visually-hidden"></span>
+              </a></li>
+            <li class="navigation-list">
+              <a href="#" class="navigation-link-button">
+                <span class="visually-hidden">Хочу сюда!</span>
+              </a>
+            </li>
+          </ul>
+      </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="filter-block">
+      <header class="inner-header">
+        <h1 class="inner-header-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">
+              <img src="#" alt="Иконка главной страницы">
+                <span class="visually-hidden">Главная</span>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Каталог</a>
+          </li>
+        </ul>
+      </header>
+
+      <section class="catalog-products">
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Инфаструктура:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="swimming-pool" checked>
+                  Бассейн
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="parking" checked>
+                  Парковка
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="wifi">
+                  Wi-fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Тип жилья:</legend>
+            <ul class="catalog-filter-list"></ul>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="hotel" checked>
+                  Гостиница
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="motel">
+                  Мотель
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="appartments">
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+            <li class="catalog-filter-item">
+              <input class="initial-price" placeholder="От" value="0" type="number" name="initial-price">
+              <input class="final-price" placeholder="До" value="9000" type="number" name="final-price">
+              <input class="double-range-price" type="range">
+            </li>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <ul class="catalog-filter-list"></ul>
+              <li class="catalog-filter-item">
+                <button class="button" type="submit">Применить</button>
+                <input type="reset" value="Сбросить">
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+    </section>
+    <div class="catalog">
+      <div class="catalog-filter"></div>
+        <a href="#"></a>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="popular">Сначала популярное</option>
+          <option value="cheap">Сначала дешёвое</option>
+          <option value="expensive">Сначала дорогое</option>
+        </select>
+        <ul class="btn-view-list">
+          <li class="btn-view-item"><span class="visually-hidden"></span></li>
+          <li class="btn-view-item"><span class="visually-hidden"></span></li>
+          <li class="btn-view-item"><span class="visually-hidden"></span></li>
+        </ul>
+    </div>
+    <div class="catalog-card">
+      <div class="product-card">
+        <a class="product-card-link" href="#">
+          <img class="product-card-image" src="" alt="">
+          <h3 class="product-card-title">Шампунь для мужчин Brews Daily</h3>
+        </a>
+        <b class="product-card-price">744 ₽</b>
+        <a class="product-card-button button" href="#">Купить</a>
+      </div>
+      </div>
+
+    </div>
+
+
+
+  </main>
+
+
+
+  <section class="newsletter">
+    <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+    <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label for="newsletter-email">Email</label>
+        <input class="field"  placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
+        <button class="button newsletter-button" type="submit">
+          <span class="newsletter-subscribe">Подписаться</span>
+        </button>
+      </form>
+  </section>
+
+
+
+  <footer class="page-footer">
+    <div class="social-list">
+      <ul class="social-item">
+        <li class="social-items">
+          <a href="#" class="social-vk">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="social-items">
+          <a href="#" class="social-tg">
+            <span class="visually-hidden">Телеграмм</span>
+          </a>
+        </li>
+        <li class="social-items">
+          <a href="#" class="social-youtube">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-phone-number">
+      <span>+7 (812) 812-12-12</span>
+    </div>
+    <div class="footer-logo">
+      <a href="https://htmlacademy.ru/">
+        <img src="#" alt="логотип htmlacademy">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
