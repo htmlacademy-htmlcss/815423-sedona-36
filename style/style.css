@@ -25,3 +25,10 @@ body {
 .advantages-icon-souvenir {
   background-image: url(../image/icon-souvenir.svg);
 }
+
+/* newsletter BLOCK */
+.newsletter {
+  background-image: url(../image/blur-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
