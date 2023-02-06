@@ -2,7 +2,17 @@ body {
   margin: 0;
   padding: 0;
 }
-
+/* HEADER */
+.navigation-list li a {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.navigation-link-search {
+  background-image: url(../image/search-header-icon.png);
+}
+.navigation-link-heart {
+  background-image: url(../image/heart-header-icon.png);
+}
 /* HERO BLOCK */
 .presentation {
   background-image: url(../image/hero-background.jpg);
