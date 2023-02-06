@@ -9,3 +9,19 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
+/* advantages BLOCK */
+.advantages-image{
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 72px;
+  height: 72px;
+}
+.advantages-icon-home{
+  background-image: url(../image/icon-home.svg);
+}
+.advantages-icon-food{
+  background-image: url(../image/icon-food.svg);
+}
+.advantages-icon-souvenir {
+  background-image: url(../image/icon-souvenir.svg);
+}
