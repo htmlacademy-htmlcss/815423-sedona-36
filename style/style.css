@@ -2,20 +2,21 @@ body {
   margin: 0;
   padding: 0;
 }
+
 /* HEADER */
 .navigation-list li a {
   background-repeat: no-repeat;
   background-size: contain;
 }
 .navigation-link-search {
-  background-image: url(../image/search-header-icon.png);
+  background-image: url("../image/search-header-icon.png");
 }
 .navigation-link-heart {
-  background-image: url(../image/heart-header-icon.png);
+  background-image: url("../image/heart-header-icon.png");
 }
 /* HERO BLOCK */
 .presentation {
-  background-image: url(../image/hero-background.jpg);
+  background-image: url("../image/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -27,18 +28,18 @@ body {
   height: 72px;
 }
 .advantages-icon-home{
-  background-image: url(../image/icon-home.svg);
+  background-image: url("../image/icon-home.svg");
 }
 .advantages-icon-food{
-  background-image: url(../image/icon-food.svg);
+  background-image: url("../image/icon-food.svg");
 }
 .advantages-icon-souvenir {
-  background-image: url(../image/icon-souvenir.svg);
+  background-image: url("../image/icon-souvenir.svg");
 }
 
 /* newsletter BLOCK */
 .newsletter {
-  background-image: url(../image/blur-bg.png);
+  background-image: url("../image/blur-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -52,11 +53,11 @@ body {
   height: 40px;
 }
 .social-vk {
-  background-image: url(../image/icon-vk.png);
+  background-image: url("../image/icon-vk.png");
 }
 .social-tg {
-  background-image: url(../image/icon-tg.png);
+  background-image: url("../image/icon-tg.png");
 }
 .social-youtube {
-  background-image: url(../image/icon-youtube.svg);
+  background-image: url("../image/icon-youtube.svg");
 }
