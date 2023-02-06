@@ -1,0 +1,14 @@
+/* FILTER BLOCK */
+.filter-block {
+  background-image: url(../../image/catalog-bg-blur.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.breadcrumbs-item:first-child {
+  background-image: url(../../image/breadcrumbs-icon-home.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.breadcrumbs-item:first-child::after {
+  content: url('../../image/arrow-right.svg');
+}
