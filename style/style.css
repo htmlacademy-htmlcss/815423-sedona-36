@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* HERO BLOCK */
+.presentation {
+  background-image: url(../image/hero-background.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* PAGE-MAIN-ABOUT BLOCK */
