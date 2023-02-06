@@ -32,3 +32,21 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
+/* FOOTER */
+.social-vk,
+.social-tg,
+.social-youtube {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 47.33px;
+  height: 40px;
+}
+.social-vk {
+  background-image: url(../image/icon-vk.png);
+}
+.social-tg {
+  background-image: url(../image/icon-tg.png);
+}
+.social-youtube {
+  background-image: url(../image/icon-youtube.svg);
+}
