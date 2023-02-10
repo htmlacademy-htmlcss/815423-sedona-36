@@ -1,6 +1,36 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+html {
+  height: 100%;
+}
 body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
   margin: 0;
-  padding: 0;
+  height: 100%;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background:#ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 .visually-hidden {
   position: absolute;
@@ -14,29 +44,37 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.page-main {
+  flex-grow: 1;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 /* HEADER */
-.navigation-list li a {
+.navigation-list .navigation-link {
   background-repeat: no-repeat;
   background-size: contain;
 }
 .navigation-link-search {
-  background-image: url("../image/search-header-icon.png");
+  background-image: url("/image/header-search-icon.svg");
+  display: block;
+  width: 20px;
+  height: 20px;
 }
 .navigation-link-heart {
-  background-image: url("../image/heart-header-icon.png");
+  background-image: url("../image/heart-header-icon.svg");
 }
+.navigation-link-current {
+  border-bottom: 2px solid #1E90FF;
+}
+
 /* HERO BLOCK */
-.presentation {
+.main-hero {
   background-image: url("../image/hero-background.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  display: flex;
   height: 485px;
-  flex-direction: column;
-  align-items: center;
 }
-/* advantages BLOCK */
+/* advantages BLOCK
 .advantages-image{
   background-repeat: no-repeat;
   background-size: contain;
@@ -52,9 +90,9 @@ body {
 .advantages-icon-souvenir {
   background-image: url("../image/icon-souvenir.svg");
 }
-
+*/
 /* newsletter BLOCK */
-.newsletter {
+.main-newsletter {
   background-image: url("../image/blur-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -64,16 +102,50 @@ body {
 .social-tg,
 .social-youtube {
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 47.33px;
+  display: block;
+  width: 47px;
   height: 40px;
 }
 .social-vk {
-  background-image: url("../image/icon-vk.png");
+  background-image: url("../image/icon-vk.svg");
 }
 .social-tg {
-  background-image: url("../image/icon-tg.png");
+  background-image: url("../image/icon-tg.svg");
 }
 .social-youtube {
   background-image: url("../image/icon-youtube.svg");
+}
+
+
+
+/* CATALOG.HTML */
+/* FILTER BLOCK */
+.filter-block {
+  background-image: url("../image/catalog-bg-blur.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.breadcrumbs-item:first-child {
+  background-image: url("../image/breadcrumbs-icon-home.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.breadcrumbs-item:not(:first-child)::after {
+  content: "";
+  background-image: url("../image/arrow-right.svg");
+}
+/* CATALOG SECTION */
+.button-view-cards,
+.button-view-card,
+.button-view-list {
+  background-repeat: no-repeat;
+}
+.button-view-cards {
+  background-image: url("../image/view-cards.svg");
+}
+.button-view-card {
+  background-image: url("../image/view-card.svg");
+}
+.button-view-list {
+  background-image: url("../image/view-list.svg");
 }
