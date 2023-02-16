@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style/style.css" />
     <title>HTML Academy: Седона</title>
   </head>
-  <body class="wrapper">
+  <body>
     <div class="container">
       <header class="page-header">
         <a href="index.html">
@@ -20,103 +20,164 @@
         <nav class="header-navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+              <a
+                class="navigation-link navigation-link-current"
+                href="index.html"
+                >Главная</a
+              >
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#!">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog/catalog.html"
-                >Гостиницы</a
-              >
-            </li>
-          </ul>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link-search" href="#!">
-                <span class="visually-hidden">Поиск.</span>
+              <a class="navigation-link" href="catalog/catalog.html">
+                Гостиницы
               </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link-heart" href="#!">
-                <span class="visually-hidden">Избранное.</span>
-                <span class="heart-counter">12</span>
-              </a>
-            </li>
-            <li class="navigation-list">
-              <a class="navigation-link-button" href="#!">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link-search" href="#!">
+              <span class="visually-hidden">Поиск.</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link-heart" href="#!">
+              <span class="visually-hidden">Избранное.</span>
+              <span class="heart-counter">12</span>
+            </a>
+          </li>
+          <li class="navigation-list">
+            <a class="navigation-link-button" href="#!">Хочу сюда!</a>
+          </li>
+        </ul>
       </header>
       <main class="page-main">
         <header class="main-hero">
           <h1 class="visually-hidden">Sedona.</h1>
           <img
+            class="hero-title"
             src="image/title-hero-bg.svg"
             alt="Welcome to the gorgeous Sedona Because the grand canyon sucks."
           />
         </header>
         <div class="main-story">
-          <p class="lead-text">
-            Седона — небольшой городок в Аризоне, заслуживающий большего!
+          <p class="lead-title">
+            Седона — небольшой городок в Аризоне,<br />
+            заслуживающий большего!
           </p>
-          <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <p class="lead-subtitle">
+            Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+          </p>
         </div>
-        <div class="main-about">
-          <div class="about-item">
-            <p class="about-title">Настоящий городок</p>
-            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          </div>
-          <div class="about-item">
-            <img src="image/sedona-city.jpg" alt="Фотография города Седоны." />
-          </div>
-          <div class="about-item">
-            <p class="about-title">Небольшая площадь</p>
-            <p>Все достопримечательности находятся очень близко</p>
-          </div>
-          <div class="about-item">
-            <p class="about-title">Красивая дорога</p>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
-          <div class="about-item">
-            <p class="about-title">Мало туристов</p>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
-          </div>
-          <div class="about-item">
-            <img src="image/sedona-canyon.jpg" alt="Мост дьявола." />
-          </div>
-          <div class="about-item">
-            <p class="about-title">Там есть мост дьявола</p>
-            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-          </div>
-        </div>
+        <ul class="main-about">
+          <li class="about-item about-item-blue">
+            <div class="about-item-container">
+              <p class="about-title title">Настоящий городок</p>
+              <p class="subtitle">
+                Седона — не аттракцион для туристов, там течёт своя жизнь
+              </p>
+            </div>
+            <img
+              src="image/sedona-city.jpg"
+              alt="Фотография города Седоны."
+              width="800"
+              height="385"
+            />
+          </li>
+          <li class="about-item">
+            <div class="about-item-container">
+              <p class="about-title title">Небольшая площадь</p>
+              <p class="subtitle">
+                Все достопримечательности находятся очень близко
+              </p>
+            </div>
+          </li>
+          <li class="about-item">
+            <div class="about-item-container about-item-gray">
+              <p class="about-title title">
+                Красивая<br />
+                дорога
+              </p>
+              <p class="subtitle">
+                Ехать в Седону из Лас-Вегаса совсем не скучно!
+              </p>
+            </div>
+          </li>
+          <li class="about-item">
+            <div class="about-item-container">
+              <p class="about-title title">
+                Мало<br />
+                туристов
+              </p>
+              <p class="subtitle">
+                Большинство едет в Гранд Каньон и толпится там
+              </p>
+            </div>
+          </li>
+          <li class="about-item about-item-blue">
+            <img
+              src="image/sedona-canyon.jpg"
+              alt="Мост дьявола."
+              width="800"
+              height="385"
+            />
+            <div class="about-item-container">
+              <p class="about-title title">
+                Там есть<br />
+                мост дьявола
+              </p>
+              <p class="subtitle">
+                Да, по нему можно пройти! Если вы осмелитесь, разумеется
+              </p>
+            </div>
+          </li>
+        </ul>
+        <section class="main-quality">
+          <h2 class="visually-hidden">
+            Причины почему вам стоит приехать сюда.
+          </h2>
+          <p class="lead-title">
+            Седона — небольшой городок в Аризоне,<br />
+            заслуживающий большего!
+          </p>
+          <p class="lead-subtitle">
+            Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+          </p>
+        </section>
         <section class="main-advantages">
           <h2 class="visually-hidden">Причины почему стоит посетить.</h2>
           <div class="advantages-wrapper">
-            <div class="advantages-item advantages-card">
-              <p class="advantages-title">Жилье</p>
-              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </div>
-            <div class="advantages-item advantages-card">
-              <p class="advantages-title">Еда</p>
-              <p>
-                Всегда заказывайте топовый фирменный бургер, вы не
-                разочаруетесь!
+            <div class="advantages-item about-item-container about-item-gray">
+              <p class="title">Жилье</p>
+              <p class="subtitle">
+                Рекомендуем пожить<br />
+                в настоящем мотеле, всё как в кино!
               </p>
             </div>
-            <div class="advantages-item advantages-card">
-              <p class="advantages-title">Сувениры</p>
-              <p>
-                Не только китайского, но и настоящего местного производства!
+            <div class="advantages-item about-item-container">
+              <p class="title">Еда</p>
+              <p class="subtitle">
+                Всегда заказывайте<br />
+                топовый фирменный бургер,<br />
+                вы не разочаруетесь!
+              </p>
+            </div>
+            <div class="advantages-item about-item-container about-item-gray">
+              <p class="title">Сувениры</p>
+              <p class="subtitle">
+                Не только китайского,<br />
+                но и настоящего местного<br />
+                производства!
               </p>
             </div>
           </div>
         </section>
         <div class="main-search">
-          <p class="lead-text">Заинтересовались?</p>
-          <p>
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+          <p class="lead-title">Заинтересовались?</p>
+          <p class="lead-subtitle">
+            Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
             предложения гостиниц в Седоне
           </p>
           <button class="button-search-hostel" type="button">
@@ -124,8 +185,9 @@
           </button>
         </div>
         <section class="main-newsletter">
-          <p class="lead-text newsletter-title">Подпишитесь на рассылку</p>
-          <p class="newsletter-text">
+          <h2 class="visually-hidden">Подпишитесь на рассылку.</h2>
+          <p class="lead-title newsletter-title">Подпишитесь на рассылку</p>
+          <p class="lead-subtitle">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <form
@@ -133,9 +195,9 @@
             action="https://echo.htmlacademy.ru/"
             method="post"
           >
-            <label for="visually-hidden">Email.</label>
+            <label for="newsletter-email" class="visually-hidden">Email.</label>
             <input
-              class="field"
+              class="newsletter-field"
               placeholder="Ваш email"
               type="email"
               name="newsletter-email"
