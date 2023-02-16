@@ -19,36 +19,38 @@
       <nav class="header-navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="../index.html">Главная</a>
+            <a
+              class="navigation-link navigation-link-current"
+              href="index.html"
+              >Главная</a
+            >
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#!">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a
-              class="navigation-link navigation-link-current"
-              href="catalog.html"
-              >Гостиницы</a
-            >
-          </li>
-        </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link-search" href="#!">
-              <span class="visually-hidden">Поиск.</span>
+            <a class="navigation-link" href="catalog/catalog.html">
+              Гостиницы
             </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link-heart" href="#!">
-              <span class="visually-hidden">Избранное.</span>
-              <span class="heart-counter">12</span>
-            </a>
-          </li>
-          <li class="navigation-list">
-            <a class="navigation-link-button" href="#!">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
+          <a class="navigation-link-search" href="#!">
+            <span class="visually-hidden">Поиск.</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link-heart" href="#!">
+            <span class="visually-hidden">Избранное.</span>
+            <span class="heart-counter">12</span>
+          </a>
+        </li>
+        <li class="navigation-list">
+          <a class="navigation-link-button" href="#!">Хочу сюда!</a>
+        </li>
+      </ul>
     </header>
     <main class="page-main">
       <section class="filter-block">
@@ -56,12 +58,12 @@
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">
+              <a class="breadcrumbs-link breadcrumbs-home" href="index.html" aria-label="Главная.">
                 <span class="visually-hidden">Главная.</span>
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Каталог</a>
+              <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ol>
         </header>
@@ -143,22 +145,18 @@
                 </li>
               </ul>
             </fieldset>
-            <div>
-              <label for="price">Стоимость, ₽:</label>
-              <input type="number" id="price" name="price" />
-              <input type="number" id="price" name="price" />
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              <!-- <input type="number" id="price" name="price-initial" />
               <input
                 type="range"
                 id="price"
-                name="price"
+                name="price-final"
                 min="0"
                 max="9000"
                 step="1"
-              />
-            </div>
-            <div class="output-price">
-              <output name="price"></output>
-            </div>
+              /> -->
+            </fieldset>
             <div class="catalog-filter-group">
               <button class="button" type="submit">Применить</button>
               <button class="button-reset" type="reset">Сбросить</button>
@@ -205,7 +203,7 @@
             <p>Гостиница</p>
             <p>От 4000 Р</p>
             <a class="button button-product-card" href="#!">Подробнее</a>
-            <a class="button button-product-card button-add" href="#!"
+            <a class="button button-product-card" href="#!"
               >Избранное</a
             >
             <p class="star-rating star-rating-4">
@@ -224,7 +222,7 @@
             <h3 class="product-card-title">Villas at Poco Diablo</h3>
             <p>Гостиница</p>
             <p>От 5000 ₽</p>
-            <a class="product-card-button button" href="#!">Подробнее</a>
+            <a class="product-card-button button button-active" href="#!">Подробнее</a>
             <a
               class="product-card-button button product-card-button-active"
               href="#!"
@@ -282,8 +280,8 @@
         </div>
       </section>
       <section class="newsletter">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-text">
+        <h2 class="lead-title">Подпишитесь на рассылку</h2>
+        <p class="lead-subtitle">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form
@@ -291,7 +289,7 @@
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
-          <label for="visually-hidden">Email.</label>
+          <label for="newsletter-email" class="visually-hidden">Email.</label>
           <input
             class="field"
             placeholder="Ваш email"
