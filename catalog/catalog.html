@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="style/style.css" />
-    <link rel="icon" href="../image/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../image/favicon.png" />
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -72,6 +72,7 @@
           <div class="catalog-filter">
             <form
               class="catalog-filters"
+              id="filters"
               action="https://echo.htmlacademy.ru/"
               method="get">
               <fieldset class="catalog-filter-group">
@@ -114,8 +115,8 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Тип жилья:</legend>
+              <fieldset class="catalog-filter-group filter-group-type-home">
+                <legend class="catalog-filter-title">Тип Жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
@@ -177,23 +178,21 @@
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0; width: 226px">
                     <button class="range-toggle toggle-min">
-                      <span class="visually-hidden"
-                        >Изменить минимальную цену.</span>
+                      <span class="visually-hidden">
+                        Изменить минимальную цену.
+                      </span>
                     </button>
                     <button class="range-toggle toggle-max">
-                      <span class="visually-hidden"
-                        >Изменить максимальную цену.</span>
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
                 </div>
               </fieldset>
               <div class="catalog-filter-group">
                 <button class="button filter-button button-blue" type="submit">
-                  <span class="visually-hidden">Применить.</span>
                   Применить
                 </button>
                 <button class="button button-reset" type="reset">
-                  <span class="visually-hidden">Сбросить.</span>
                   Сбросить
                 </button>
               </div>
@@ -203,14 +202,14 @@
         <section class="hotels">
           <div class="hotels-filter">
             <h2 class="catalog-title">Найдено гостиниц: 38</h2>
-            <select class="select select-control" aria-label="Сортировка">
+            <select class="select-control" aria-label="Сортировка" form="filters">
               <option value="popular">Сначала дешевые</option>
               <option value="cheap">Сначала популярные</option>
               <option value="expensive">Сначала дорогие</option>
             </select>
             <ul class="button-list">
               <li class="button-view-item">
-                <a class="button-view-link button-view-cards">
+                <a class="button-view-link button-view-cards button-view-current">
                   <span class="visually-hidden">Карточный режим.</span>
                 </a>
               </li>
@@ -242,7 +241,7 @@
               <p class="button star-rating star-rating-4">
                 <span class="visually-hidden">4 звезды.</span>
               </p>
-              <p class="button card-raiting">Рейтинг: 8,5</p>
+              <p class="card-raiting">Рейтинг: 8,5</p>
             </div>
             <div class="product-card">
               <img
@@ -263,7 +262,7 @@
               <p class="star-rating star-rating-4">
                 <span class="visually-hidden">4 звезды.</span>
               </p>
-              <p class="button card-raiting">Рейтинг: 9,2</p>
+              <p class="card-raiting">Рейтинг: 9,2</p>
             </div>
             <div class="product-card">
               <img
@@ -283,7 +282,7 @@
               <p class="star-rating star-rating-3">
                 <span class="visually-hidden">3 звезды.</span>
               </p>
-              <p class="button card-raiting">Рейтинг: 6,9</p>
+              <p class="card-raiting">Рейтинг: 6,9</p>
             </div>
             <div class="product-card">
               <img
@@ -303,7 +302,7 @@
               <p class="star-rating star-rating-2">
                 <span class="visually-hidden">2 звезды.</span>
               </p>
-              <p class="button card-raiting">Рейтинг: 5,0</p>
+              <p class="card-raiting">Рейтинг: 5,0</p>
             </div>
           </div>
           <ul class="pagination">
@@ -347,7 +346,7 @@
               id="newsletter-email"
               required/>
             <button class="newsletter-button" type="submit">
-              <span class="visually-hidden">Подписаться.</span>Подписаться
+              Подписаться
             </button>
           </form>
         </section>
