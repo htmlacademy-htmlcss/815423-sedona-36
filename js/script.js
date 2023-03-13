@@ -1,17 +1,17 @@
-let modal = document.getElementById('modalWindow');
+let modalElement = document.querySelector(".modal-container");
 let buttonWindow = document.getElementById("buttonModal");
-let closeButton = document.getElementsByClassName("modal-container-close")[0];
+let closeButton = document.querySelector(".modal-close-button");
 
 buttonWindow.onclick = function() {
-    modal.style.display = "flex";
+  modal.style.display = "flex";
 }
 
 closeButton.onclick = function() {
-    modal.style.display = "none";
+  modal.style.display = "none";
 }
 
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
