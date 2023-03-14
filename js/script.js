@@ -3,15 +3,15 @@ let buttonWindow = document.getElementById("buttonModal");
 let closeButton = document.querySelector(".modal-close-button");
 
 buttonWindow.onclick = function() {
-  modal.style.display = "flex";
+  modalElement.style.display = "flex";
 }
 
 closeButton.onclick = function() {
-  modal.style.display = "none";
+  modalElement.style.display = "none";
 }
 
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == modalElement) {
+    modalElement.style.display = "none";
   }
 }
