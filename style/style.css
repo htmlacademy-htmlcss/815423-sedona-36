@@ -163,7 +163,7 @@ body {
   right: 5px;
 }
 .button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -337,7 +337,7 @@ body {
   background: #756157;
   border-radius: 4px;
   padding: 8px 50px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -383,7 +383,7 @@ body {
   opacity: 0.6;
 }
 .newsletter-field {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -418,7 +418,7 @@ body {
   background: #82b3d3;
   border-radius: 0 4px 4px 0;
   padding: 8px 50px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -437,7 +437,7 @@ body {
   background: #68a2ca;
 }
 .newsletter-subtitle {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 22px;
   line-height: 26px;
@@ -655,7 +655,7 @@ body {
   grid-row: 1/2;
   z-index: 1;
   justify-self: end;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
@@ -697,7 +697,7 @@ body {
   grid-row: 1/2;
   z-index: 1;
   justify-self: end;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
@@ -966,7 +966,7 @@ body {
 /* select control */
 .select-control {
   margin-left: auto;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
